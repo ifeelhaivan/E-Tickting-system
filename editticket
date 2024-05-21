@@ -1,0 +1,10 @@
+from tkinter import *
+frame = Tk()
+frame.geometry("500x300")
+frame.title("Main Frame")
+l1 = Label(frame,text="Main Frame",font=('Arial',30))
+b = Button(frame,text="Click Me")
+l1.pack()
+b.pack()
+frame.mainloop()
+
