@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: service
+metadata:
+  name: Trainsvc
+spec:
+  selector:
+    app: Train
+  ports:
+    - protocal: TCP
+      port: 8080
+      targetPort: 8080

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metatdata:
+   name: TrainBookApp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Train
+  template:
+    metadata:
+      name: TrainBookApp
+      labels:
+        app: Train
+    spec:
+      conatiners:
+        - name: Train
+          image: trainbookapp:latest
+          ports:
+            - containerPort: 8080
